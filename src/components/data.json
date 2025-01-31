@@ -1,0 +1,162 @@
+{
+  "conversation_list": [
+    {
+      "contactName": "Saiful JB",
+      "lastMessage": "I'll send it over an email",
+      "lastTime": "12:25 PM",
+      "unReadMessageCount": 14,
+      "type": "whats-app",
+      "image": "team-1.sjpeg",
+      "messageHistory": [
+        {
+          "me": false,
+          "message": "I'll send it over an email ASAP"
+        },
+        {
+          "me": true,
+          "message": "Seperti ini sih foto produknya, gmn?"
+        }
+      ]
+    },
+    {
+      "contactName": "Tanwar Nina",
+      "lastMessage": "Okay Sure",
+      "lastTime": "06/05/2023",
+      "unReadMessageCount": 0,
+      "type": "whats-app",
+      "image": "team-2.jpeg",
+      "messageHistory": [
+        {
+          "me": false,
+          "message": "Okay Sure"
+        }
+      ]
+    },
+    {
+      "contactName": "Selviana",
+      "lastMessage": "Diberitahukan untuk ha...",
+      "lastTime": "06/05/2023",
+      "unReadMessageCount": 0,
+      "type": "whats-app",
+      "image": "team-3.jpeg",
+      "messageHistory": [
+        {
+          "me": false,
+          "message": "Okay Sure"
+        }
+      ]
+    },
+    {
+      "contactName": "Pedro",
+      "lastMessage": "Diberitahukan untuk ha...",
+      "lastTime": "06/05/2023",
+      "unReadMessageCount": 0,
+      "type": "telegram",
+      "image": "team-4.jpeg",
+      "messageHistory": [
+        {
+          "me": false,
+          "message": "Okay Sure"
+        }
+      ]
+    },
+    {
+      "contactName": "Selviana",
+      "lastMessage": "Diberitahukan untuk ha...",
+      "lastTime": "06/05/2023",
+      "unReadMessageCount": 0,
+      "type": "whats-app",
+      "image": "team-3.jpeg",
+      "messageHistory": [
+        {
+          "me": false,
+          "message": "Okay Sure"
+        }
+      ]
+    },
+    {
+      "contactName": "Pedro",
+      "lastMessage": "Diberitahukan untuk ha...",
+      "lastTime": "06/05/2023",
+      "unReadMessageCount": 0,
+      "type": "telegram",
+      "image": "team-4.jpeg",
+      "messageHistory": [
+        {
+          "me": false,
+          "message": "Okay Sure"
+        }
+      ]
+    },
+    {
+      "contactName": "Selviana",
+      "lastMessage": "Diberitahukan untuk ha...",
+      "lastTime": "06/05/2023",
+      "unReadMessageCount": 0,
+      "type": "whats-app",
+      "image": "team-3.jpeg",
+      "messageHistory": [
+        {
+          "me": false,
+          "message": "Okay Sure"
+        }
+      ]
+    },
+    {
+      "contactName": "Pedro",
+      "lastMessage": "Diberitahukan untuk ha...",
+      "lastTime": "06/05/2023",
+      "unReadMessageCount": 0,
+      "type": "telegram",
+      "image": "team-4.jpeg",
+      "messageHistory": [
+        {
+          "me": false,
+          "message": "Okay Sure"
+        }
+      ]
+    },
+    {
+      "contactName": "Selviana",
+      "lastMessage": "Diberitahukan untuk ha...",
+      "lastTime": "06/05/2023",
+      "unReadMessageCount": 0,
+      "type": "whats-app",
+      "image": "team-3.jpeg",
+      "messageHistory": [
+        {
+          "me": false,
+          "message": "Okay Sure"
+        }
+      ]
+    },
+    {
+      "contactName": "Pedro",
+      "lastMessage": "Diberitahukan untuk ha...",
+      "lastTime": "06/05/2023",
+      "unReadMessageCount": 0,
+      "type": "telegram",
+      "image": "team-4.jpeg",
+      "messageHistory": [
+        {
+          "me": false,
+          "message": "Okay Sure"
+        }
+      ]
+    },
+    {
+      "contactName": "Paula",
+      "lastMessage": "Diberitahukan untuk ha...",
+      "lastTime": "06/05/2023",
+      "unReadMessageCount": 0,
+      "type": "whats-app",
+      "image": "team-1.jpeg",
+      "messageHistory": [
+        {
+          "me": false,
+          "message": "Okay Sure"
+        }
+      ]
+    }
+  ]
+}
