@@ -19,7 +19,7 @@ const ChatInput = () => {
             <Mic size={20} />
           </button>
         </div>
-        <div className="flex h-12 w-[6%] items-center justify-center rounded-md bg-purple-500">
+        <div className="flex h-12 lg:w-[6%] md:w-[6%] sm:w-[10%] w-[15%] items-center justify-center rounded-md bg-purple-500">
           <Send className="h-6 w-6 cursor-pointer text-white" />
         </div>
       </div>

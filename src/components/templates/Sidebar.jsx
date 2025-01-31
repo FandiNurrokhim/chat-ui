@@ -5,31 +5,24 @@ import NewChatButton from "../atoms/NewChatButton";
 import Search from "../atoms/Search";
 import ListWithIcons from "../atoms/ListWithIcon";
 import UserInfo from "../moleculess/UserInfo";
-import { Settings, HelpCircle } from "lucide-react";
+import { Sun, Moon, Settings, HelpCircle } from "lucide-react";
 
 export default function SideBar() {
+  const [darkMode, setDarkMode] = useState(false);
   const conversationsList = conversations.conversation_list;
-  const [search, setSearch] = useState("");
-  const filteredConversationsList =
-    search.length > 0
-      ? conversationsList.filter((conversationList) =>
-          conversationList.contactName.toLowerCase().includes(search)
-        )
-      : conversationsList;
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div>
-      <nav className="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+      <nav className="fixed top-0 z-50 w-full bg-white">
         <div className="px-3 py-3 lg:px-5 lg:pl-3">
           <div className="flex items-center justify-between">
-            <div className="flex items-center justify-start rtl:justify-end">
+            <div className="flex w-[350px] items-center  justify-start rtl:justify-end">
               <button
-                data-drawer-target="logo-sidebar"
-                data-drawer-toggle="logo-sidebar"
-                aria-controls="logo-sidebar"
                 type="button"
-                className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              >
+                onClick={() => setIsOpen(!isOpen)}
+                className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                >
                 <span className="sr-only">Open sidebar</span>
                 <svg
                   className="w-6 h-6"
@@ -51,64 +44,21 @@ export default function SideBar() {
                   className="h-8 me-3"
                   alt="Logo"
                 />
-                <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">
+                <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap text-black">
                   Chat-AI
                 </span>
               </a>
             </div>
-            <div className="flex items-center">
+            <div className="flex w-full items-center justify-between">
+              <div className="text-black">Chat</div>
               <div className="flex items-center ms-3">
                 <div>
                   <button
-                    type="button"
-                    className="flex text-sm bg-gray-800 rounded-full focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
-                    aria-expanded="false"
-                    data-dropdown-toggle="dropdown-user"
+                    onClick={() => setDarkMode(!darkMode)}
+                    className="rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700"
                   >
-                    <span className="sr-only">Open user menu</span>
-                    <img
-                      className="w-8 h-8 rounded-full"
-                      src="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-                      alt="user photo"
-                    />
+                    {darkMode ? <Sun size={18} /> : <Moon size={18} />}
                   </button>
-                </div>
-                <div
-                  className="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-sm shadow-sm dark:bg-gray-700 dark:divide-gray-600"
-                  id="dropdown-user"
-                >
-                  <NewChatButton />
-                  <Search />
-                  <ListWithIcons />
-
-                  <div className="mt-10">
-                    {filteredConversationsList
-                      .slice(0, 5)
-                      .map((conversation, index) => {
-                        return (
-                          <ConversationList
-                            key={index}
-                            isLastConversation={index === 0}
-                            data={conversation}
-                          />
-                        );
-                      })}
-                  </div>
-                  {filteredConversationsList.length > 5 && (
-                    <button className="mt-1 flex w-full items-center justify-center rounded-lg border bg-white px-4 py-2 text-sm font-bold text-black shadow hover:bg-[#00000009]">
-                      Show More
-                      <svg
-                        className="ml-2"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M12 16L8 12H16L12 16Z" fill="currentColor" />
-                      </svg>
-                    </button>
-                  )}
                 </div>
               </div>
             </div>
@@ -117,19 +67,18 @@ export default function SideBar() {
       </nav>
 
       <aside
-        id="logo-sidebar"
-        className="fixed w-[300px] top-0 left-0 z-40 w-64 h-screen pt-20 transition-transform -translate-x-full bg-white border-r border-gray-200 sm:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+        className={`fixed w-[300px] top-0 left-0 z-40 h-screen pt-14 border-r border-gray-200 bg-white dark:bg-gray-800 transition-transform
+          ${isOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0`}
         aria-label="Sidebar"
       >
-        <div className="h-full px-3 pb-4 overflow-y-auto bg-white dark:bg-gray-800">
-          <NewChatButton />
-          <Search />
-          <ListWithIcons />
+        <div className="h-full px-3 pb-4 overflow-y-auto bg-white flex flex-col justify-between">
+          <div>
+            <NewChatButton />
+            <Search />
+            <ListWithIcons />
 
-          <div className="mt-10">
-            {filteredConversationsList
-              .slice(0, 5)
-              .map((conversation, index) => {
+            <div className="mt-8">
+              {conversationsList.slice(0, 5).map((conversation, index) => {
                 return (
                   <ConversationList
                     key={index}
@@ -138,22 +87,24 @@ export default function SideBar() {
                   />
                 );
               })}
+            </div>
+            {conversationsList.length > 5 && (
+              <button className="mt-1 flex w-full items-center justify-center rounded-lg border bg-white px-4 py-2 text-sm font-bold text-black shadow hover:bg-[#00000009]">
+                Show More
+                <svg
+                  className="ml-2"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12 16L8 12H16L12 16Z" fill="currentColor" />
+                </svg>
+              </button>
+            )}
           </div>
-          {filteredConversationsList.length > 5 && (
-            <button className="mt-1 flex w-full items-center justify-center rounded-lg border bg-white px-4 py-2 text-sm font-bold text-black shadow hover:bg-[#00000009]">
-              Show More
-              <svg
-                className="ml-2"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 16L8 12H16L12 16Z" fill="currentColor" />
-              </svg>
-            </button>
-          )}
+
           <div className="align-end flex w-full flex-col justify-center gap-4">
             <div className="px-3">
               <div className="space-y-6 px-2">

@@ -10,12 +10,9 @@ function App() {
   return (
     <>
       <div className="w-full bg-[#f3f3f3]">
-        <Header />
         <div className="flex w-full items-center justify-between">
-          <div className="w-1/4">
-            <SideBar />
-          </div>
-          <div className="flex w-full mx-auto justify-end">
+          <SideBar />
+          <div className="flex w-full lg:ml-64 md:md-auto sm:ml-auto justify-end">
             <ConversationDetails />
           </div>
         </div>
