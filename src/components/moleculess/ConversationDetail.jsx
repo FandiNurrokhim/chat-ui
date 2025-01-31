@@ -39,7 +39,7 @@ export default function ConversationDetails() {
   return (
     <div className="flex w-full h-full flex-col justify-between bg-[#f3f3f3] text-start">
       <div className="flex w-full flex-col gap-4 p-4 mx-auto max-h-[85vh] overflow-y-scroll">
-        <div className="lg:w-1/2 md:w-full sm:w-full w-full lg:px-0 md:px-20 mx-auto">
+        <div className="lg:w-[60%] md:w-full sm:w-full w-full lg:px-0 md:px-20 mx-auto">
           {messages.map((msg) => (
             <MessageBalloon
               key={msg.id}
