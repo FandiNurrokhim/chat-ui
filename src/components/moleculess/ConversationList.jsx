@@ -1,28 +1,22 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { ConversationContext } from "./ConversationContext";
 import { MessageSquare } from "lucide-react";
 
 export default function ConversationList({ isLastConversation, data }) {
-  const { setConversation } = useContext(ConversationContext);
-  const {
-    contactName,
-    lastMessage,
-  } = data;
-  const [isHover, setHover] = useState(false);
+  const { conversation, setConversation } = useContext(ConversationContext);
+  const { contactName, lastMessage, phoneNumber } = data;
 
   const truncateText = (text, maxLength) => {
     return text.length > maxLength ? text.slice(0, maxLength) + "..." : text;
   };
 
-  const isActive = isLastConversation;
+  const isActive = conversation && conversation.phoneNumber === phoneNumber;
 
   return (
     <div
       className={`flex h-[4rem] w-full cursor-pointer gap-2 rounded-lg border px-2 mb-1 ${
         isActive ? "bg-[#f3f2f8] border-[#a7a7c1]" : "bg-white hover:bg-[#00000009]"
       }`}
-      onMouseMove={() => setHover(true)}
-      onMouseLeave={() => setHover(false)}
       onClick={() => setConversation(data)}
     >
       <div className="flex h-full w-[1.3rem] py-2 pb-5">

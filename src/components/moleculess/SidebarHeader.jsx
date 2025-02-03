@@ -5,7 +5,7 @@ import ListWithIcons from '../atoms/ListWithIcon';
 
 export default function SidebarHeader() {
   return (
-    <div>
+    <div className='mb-5'>
       <NewChatButton />
       <Search />
       <ListWithIcons />

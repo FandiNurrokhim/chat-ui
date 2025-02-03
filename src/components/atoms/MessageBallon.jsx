@@ -62,7 +62,7 @@ export default function MessageBalloon({ me, message, user }) {
                   className="my-2 max-h-40 rounded-lg object-cover"
                 />
               )}
-              <p>{message.text}</p>
+              <p>{message}</p>
             </div>{" "}
             <div className="mt-2 flex items-center justify-between text-xs text-[#777777]">
               <div className="flex gap-2 rounded-md border p-1 text-[#777777]">

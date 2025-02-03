@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div className="w-full bg-[#f3f3f3]">
+      <div className="w-full bg-[#f3f3f3] h-full">
         <div className="flex w-full items-center justify-between">
           <SideBar />
           <div className="flex w-full lg:ml-64 md:md-auto sm:ml-auto justify-end">

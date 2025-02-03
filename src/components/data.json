@@ -2,159 +2,185 @@
   "conversation_list": [
     {
       "contactName": "Saiful JB",
+      "phoneNumber": "+1234567890",
       "lastMessage": "I'll send it over an email",
       "lastTime": "12:25 PM",
       "unReadMessageCount": 14,
       "type": "whats-app",
-      "image": "team-1.sjpeg",
-      "messageHistory": [
+      "image": "team-1.jpeg",
+      "messages": [
         {
+          "id": 1,
           "me": false,
+          "user": { "name": "Saiful JB", "avatar": "https://i.pravatar.cc/40?img=1" },
           "message": "I'll send it over an email ASAP"
         },
         {
+          "id": 2,
           "me": true,
+          "user": { "name": "You", "avatar": "https://i.pravatar.cc/40?img=2" },
           "message": "Seperti ini sih foto produknya, gmn?"
         }
       ]
     },
     {
       "contactName": "Tanwar Nina",
+      "phoneNumber": "+0987654321",
       "lastMessage": "Okay Sure",
       "lastTime": "06/05/2023",
       "unReadMessageCount": 0,
       "type": "whats-app",
       "image": "team-2.jpeg",
-      "messageHistory": [
+      "messages": [
         {
+          "id": 1,
           "me": false,
+          "user": { "name": "Tanwar Nina", "avatar": "https://i.pravatar.cc/40?img=3" },
           "message": "Okay Sure"
+        },
+        {
+          "id": 2,
+          "me": true,
+          "user": { "name": "You", "avatar": "https://i.pravatar.cc/40?img=4" },
+          "message": "Can we reschedule our meeting?"
         }
       ]
     },
     {
-      "contactName": "Selviana",
-      "lastMessage": "Diberitahukan untuk ha...",
-      "lastTime": "06/05/2023",
-      "unReadMessageCount": 0,
+      "contactName": "John Doe",
+      "phoneNumber": "+1122334455",
+      "lastMessage": "See you tomorrow!",
+      "lastTime": "08:30 AM",
+      "unReadMessageCount": 5,
       "type": "whats-app",
       "image": "team-3.jpeg",
-      "messageHistory": [
+      "messages": [
         {
+          "id": 1,
           "me": false,
-          "message": "Okay Sure"
+          "user": { "name": "John Doe", "avatar": "https://i.pravatar.cc/40?img=5" },
+          "message": "See you tomorrow!"
+        },
+        {
+          "id": 2,
+          "me": true,
+          "user": { "name": "You", "avatar": "https://i.pravatar.cc/40?img=6" },
+          "message": "Looking forward to it!"
         }
       ]
     },
     {
-      "contactName": "Pedro",
-      "lastMessage": "Diberitahukan untuk ha...",
-      "lastTime": "06/05/2023",
-      "unReadMessageCount": 0,
-      "type": "telegram",
-      "image": "team-4.jpeg",
-      "messageHistory": [
-        {
-          "me": false,
-          "message": "Okay Sure"
-        }
-      ]
-    },
-    {
-      "contactName": "Selviana",
-      "lastMessage": "Diberitahukan untuk ha...",
-      "lastTime": "06/05/2023",
+      "contactName": "Jane Smith",
+      "phoneNumber": "+2233445566",
+      "lastMessage": "Happy Birthday!",
+      "lastTime": "Yesterday",
       "unReadMessageCount": 0,
       "type": "whats-app",
-      "image": "team-3.jpeg",
-      "messageHistory": [
-        {
-          "me": false,
-          "message": "Okay Sure"
-        }
-      ]
-    },
-    {
-      "contactName": "Pedro",
-      "lastMessage": "Diberitahukan untuk ha...",
-      "lastTime": "06/05/2023",
-      "unReadMessageCount": 0,
-      "type": "telegram",
       "image": "team-4.jpeg",
-      "messageHistory": [
+      "messages": [
         {
+          "id": 1,
           "me": false,
-          "message": "Okay Sure"
+          "user": { "name": "Jane Smith", "avatar": "https://i.pravatar.cc/40?img=7" },
+          "message": "Happy Birthday!"
+        },
+        {
+          "id": 2,
+          "me": true,
+          "user": { "name": "You", "avatar": "https://i.pravatar.cc/40?img=8" },
+          "message": "Thank you so much!"
         }
       ]
     },
     {
-      "contactName": "Selviana",
-      "lastMessage": "Diberitahukan untuk ha...",
-      "lastTime": "06/05/2023",
+      "contactName": "Michael Brown",
+      "phoneNumber": "+3344556677",
+      "lastMessage": "Let's catch up soon.",
+      "lastTime": "2 days ago",
+      "unReadMessageCount": 3,
+      "type": "whats-app",
+      "image": "team-5.jpeg",
+      "messages": [
+        {
+          "id": 1,
+          "me": false,
+          "user": { "name": "Michael Brown", "avatar": "https://i.pravatar.cc/40?img=9" },
+          "message": "Let's catch up soon."
+        },
+        {
+          "id": 2,
+          "me": true,
+          "user": { "name": "You", "avatar": "https://i.pravatar.cc/40?img=10" },
+          "message": "Sure, let's plan something."
+        }
+      ]
+    },
+    {
+      "contactName": "Jane Smith",
+      "phoneNumber": "+22334455664",
+      "lastMessage": "Happy Birthday!",
+      "lastTime": "Yesterday",
       "unReadMessageCount": 0,
       "type": "whats-app",
-      "image": "team-3.jpeg",
-      "messageHistory": [
-        {
-          "me": false,
-          "message": "Okay Sure"
-        }
-      ]
-    },
-    {
-      "contactName": "Pedro",
-      "lastMessage": "Diberitahukan untuk ha...",
-      "lastTime": "06/05/2023",
-      "unReadMessageCount": 0,
-      "type": "telegram",
       "image": "team-4.jpeg",
-      "messageHistory": [
+      "messages": [
         {
+          "id": 1,
           "me": false,
-          "message": "Okay Sure"
+          "user": { "name": "Jane Smith", "avatar": "https://i.pravatar.cc/40?img=7" },
+          "message": "Happy Birthday!"
+        },
+        {
+          "id": 2,
+          "me": true,
+          "user": { "name": "You", "avatar": "https://i.pravatar.cc/40?img=8" },
+          "message": "Thank you so much!"
         }
       ]
     },
     {
-      "contactName": "Selviana",
-      "lastMessage": "Diberitahukan untuk ha...",
-      "lastTime": "06/05/2023",
-      "unReadMessageCount": 0,
+      "contactName": "Michael Brown",
+      "phoneNumber": "+33445556677",
+      "lastMessage": "Let's catch up soon.",
+      "lastTime": "2 days ago",
+      "unReadMessageCount": 3,
       "type": "whats-app",
-      "image": "team-3.jpeg",
-      "messageHistory": [
+      "image": "team-5.jpeg",
+      "messages": [
         {
+          "id": 1,
           "me": false,
-          "message": "Okay Sure"
+          "user": { "name": "Michael Brown", "avatar": "https://i.pravatar.cc/40?img=9" },
+          "message": "Let's catch up soon."
+        },
+        {
+          "id": 2,
+          "me": true,
+          "user": { "name": "You", "avatar": "https://i.pravatar.cc/40?img=10" },
+          "message": "Sure, let's plan something."
         }
       ]
     },
     {
-      "contactName": "Pedro",
-      "lastMessage": "Diberitahukan untuk ha...",
-      "lastTime": "06/05/2023",
-      "unReadMessageCount": 0,
-      "type": "telegram",
-      "image": "team-4.jpeg",
-      "messageHistory": [
-        {
-          "me": false,
-          "message": "Okay Sure"
-        }
-      ]
-    },
-    {
-      "contactName": "Paula",
-      "lastMessage": "Diberitahukan untuk ha...",
-      "lastTime": "06/05/2023",
-      "unReadMessageCount": 0,
+      "contactName": "Emily Davis",
+      "phoneNumber": "+4455667788",
+      "lastMessage": "Can you send me the report?",
+      "lastTime": "3 days ago",
+      "unReadMessageCount": 1,
       "type": "whats-app",
-      "image": "team-1.jpeg",
-      "messageHistory": [
+      "image": "team-6.jpeg",
+      "messages": [
         {
+          "id": 1,
           "me": false,
-          "message": "Okay Sure"
+          "user": { "name": "Emily Davis", "avatar": "https://i.pravatar.cc/40?img=11" },
+          "message": "Can you send me the report?"
+        },
+        {
+          "id": 2,
+          "me": true,
+          "user": { "name": "You", "avatar": "https://i.pravatar.cc/40?img=12" },
+          "message": "I'll send it over shortly."
         }
       ]
     }
