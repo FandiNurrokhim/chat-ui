@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Header from "./components/templates/Header";
 import SideBar from "./components/templates/SideBar";
 import ConversationDetails from "./components/moleculess/ConversationDetail";
 import "./App.css";
