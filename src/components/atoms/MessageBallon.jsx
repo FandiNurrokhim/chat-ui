@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import { ThumbsUp, Download, RefreshCw, Edit } from "lucide-react";
 
-export default function MessageBalloon({ key, me, message, user }) {
-  console.log("key:", key);
-
+export default function MessageBalloon({ me, message, user }) {
   const [time, setTime] = useState("");
   const flexAlignItems = me ? "items-end" : "items-start";
   const backgroundColor = me ? "bg-none" : "bg-[#FFFFFF] shadow-md";
